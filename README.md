@@ -1,6 +1,6 @@
 # ReactJS Todo List project
 
-![Alt](screenshot.jpg)
+![Alt](screenshot.png)
 
 ## Getting Started
 
