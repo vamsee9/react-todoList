@@ -5,6 +5,7 @@ export default class TodoItem extends Component {
     const {
       id,
       title,
+      handleTimer,
       handleDelete,
       handleEdit,
       handleDoneTask,
@@ -32,6 +33,9 @@ export default class TodoItem extends Component {
                 completed ? "far fa-check-square" : "far fa-square"
               }`}
             />
+          </span>
+          <span className="mx-2 text-primary" onClick={handleTimer}>
+            <i className="fas fa-clock" />
           </span>
           <span className="mx-2 text-warning" onClick={handleEdit}>
             <i className="fas fa-pen" />

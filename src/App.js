@@ -49,7 +49,7 @@ class App extends Component {
 		});
 	};
 
-	handleDoneTask = (id, completed) => {
+	handleDoneTask = (id, _completed) => {
 		const filteredItems = this.state.items.map(item => {
 			item.id === id && (item.completed = !item.completed)
 			return item
@@ -58,6 +58,10 @@ class App extends Component {
 		this.setState({
 			items: filteredItems,
 		})
+	}
+
+	handleTimer = id => {
+		
 	}
 
 	handleDelete = id => {
@@ -120,7 +124,8 @@ class App extends Component {
             <TodoList
               items={items}
               filterDoneTasks={this.filterDoneTasks} // My Experiments
-              clearList={this.clearList}
+			  clearList={this.clearList}
+			  handleTimer={this.handleTimer}
               handleDelete={this.handleDelete}
               handleEdit={this.handleEdit}
               handleDoneTask={this.handleDoneTask} // My Experiments

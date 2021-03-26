@@ -7,6 +7,7 @@ export default class TodoList extends Component {
             items,
             updateTodosToShow,
             clearList,
+            handleTimer,
             handleDelete,
             handleEdit,
             handleDoneTask,
@@ -58,6 +59,7 @@ export default class TodoList extends Component {
                       id={item.id}
                       title={item.title}
                       completed={item.completed}
+                      handleTimer={()=> handleTimer(item.id)}
                       handleDelete={() => handleDelete(item.id)}
                       handleEdit={() => handleEdit(item.id)}
                       handleDoneTask={handleDoneTask}
