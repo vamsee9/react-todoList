@@ -7,7 +7,7 @@
 Clone this repository on your local machine.
 ```
 git clone https://github.com/vamsee9/react-todoList.git
-cd react-todo-list
+cd react-todoList
 ```
 Run the following commands into the project folder to install project dependencies.
 ```
